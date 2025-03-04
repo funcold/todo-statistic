@@ -109,6 +109,37 @@ function printTodos(todos) {
     for (const line of todos) {
         console.log(line);
     }
+    // let userMax = 0;
+    // let messageMax = 0;
+    // for (const line of todos) {
+    //     const splitted = line.split(';')
+    //     if (splitted.lenght !== 3) {
+    //         userMax = Math.max(userMax, 9);
+    //         messageMax = Math.max(messageMax, line.substring(8).length);
+    //         continue;
+    //     }
+    //     const user = splitted[0].substring(8);
+    //     const message = splitted[2].trim();
+    //     userMax = Math.max(userMax, user.lenght);
+    //     messageMax = messageMax = Math.max(messageMax, message.length);
+    //     if (userMax >= 10) {
+    //         userMax = 10;
+    //     }
+    //     if (messageMax >= 50) {
+    //         messageMax = 50
+    //     }
+    // }
+    // const top = `  !  |  ${'user'.padEnd(userMax, " ")}  |  date        |  ${'comment'.padEnd(messageMax, " ")}`
+    // console.log(top);
+    // console.log('-'.repeat(top.length));
+    // for (const line of todos) {
+    //     const splitted = line.split(';')
+    //     const important = line.includes('!') ? '!' : ' ';
+    //     const user = splitted.length === 3 ? splitted[0].substring(8).padEnd(userMax, " ") : 'undefined'.padEnd(userMax, " ");
+    //     const date = splitted.length === 3 ? splitted[1].trim().padEnd(10, " ") : 'undefined ';
+    //     const message = splitted.length === 3 ? splitted[2].trim().padEnd(messageMax, " ") : line.substring(8).padEnd(messageMax, " ");
+    //     console.log(`  ${important}  |  ${user}  |  ${date}  |  ${message}`);
+    // }
 }
 
 function getImportant() {
